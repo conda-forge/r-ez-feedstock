@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -55,7 +55,7 @@ test:
 
 about:
   home: http://github.com/mike-lawrence/ez
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: Facilitates easy analysis of factorial experiments, including purely within-Ss designs
     (a.k.a. "repeated measures"), purely between-Ss designs, and mixed within-and-between-Ss
     designs. The functions in this package aim to provide simple, intuitive and consistent
@@ -67,7 +67,9 @@ about:
     predictions and confidence intervals that may be easily visualized at any level
     of the experiment's design.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
