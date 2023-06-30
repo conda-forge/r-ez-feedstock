@@ -1,11 +1,11 @@
-About r-ez
-==========
+About r-ez-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ez-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/mike-lawrence/ez
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ez-feedstock/blob/main/LICENSE.txt)
 
 Summary: Facilitates easy analysis of factorial experiments, including purely within-Ss designs (a.k.a. "repeated measures"), purely between-Ss designs, and mixed within-and-between-Ss designs. The functions in this package aim to provide simple, intuitive and consistent specification of data analysis and visualization. Visualization functions also include design visualization for pre-analysis data auditing, and correlation matrix visualization. Finally, this package includes functions for non-parametric analysis, including permutation tests and bootstrap resampling. The bootstrap function obtains predictions either by cell means or by more advanced/powerful mixed effects models, yielding predictions and confidence intervals that may be easily visualized at any level of the experiment's design.
 
