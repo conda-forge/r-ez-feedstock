@@ -1,6 +1,5 @@
 {% set version = '4.4-0' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-ez
@@ -13,8 +12,7 @@ source:
   sha256: f8a98b46c7bf55972e9efc9be077e805b60a45ce3b2ec6cf77cd9cd249d2a828
 
 build:
-  merge_build_host: True  # [win]
-  number: 3
+  number: 4
   noarch: generic
   rpaths:
     - lib/R/lib/
