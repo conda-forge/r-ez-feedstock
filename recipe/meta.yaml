@@ -1,4 +1,4 @@
-{% set version = '4.4-0' %}
+{% set version = "4.5-0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ez_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ez/ez_{{ version }}.tar.gz
-  sha256: f8a98b46c7bf55972e9efc9be077e805b60a45ce3b2ec6cf77cd9cd249d2a828
+  sha256: cdb0f15b53a462343129264f4507448169cf7c0d6a6c7185411f07e16f611bc3
 
 build:
-  number: 5
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -54,16 +54,9 @@ test:
 about:
   home: http://github.com/mike-lawrence/ez
   license: GPL-2.0-or-later
-  summary: Facilitates easy analysis of factorial experiments, including purely within-Ss designs
-    (a.k.a. "repeated measures"), purely between-Ss designs, and mixed within-and-between-Ss
-    designs. The functions in this package aim to provide simple, intuitive and consistent
-    specification of data analysis and visualization. Visualization functions also include
-    design visualization for pre-analysis data auditing, and correlation matrix visualization.
-    Finally, this package includes functions for non-parametric analysis, including
-    permutation tests and bootstrap resampling. The bootstrap function obtains predictions
-    either by cell means or by more advanced/powerful mixed effects models, yielding
-    predictions and confidence intervals that may be easily visualized at any level
-    of the experiment's design.
+  summary: Facilitates easy analysis of factorial experiments, including purely within-Ss designs (a.k.a. "repeated measures"), purely between-Ss designs, and mixed within-and-between-Ss designs. The functions in this package aim to provide simple, intuitive and consistent specification of data analysis and 
+    visualization. Visualization functions also include design visualization for pre-analysis data auditing, and correlation matrix visualization. Finally, this package includes functions for non-parametric analysis, including permutation tests and bootstrap resampling. The bootstrap function obtains predictions either
+    by cell means or by more advanced/powerful mixed effects models, yielding predictions and confidence intervals that may be easily visualized at any level of the experiment's design.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
